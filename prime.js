@@ -1,14 +1,13 @@
-let num = 13
-let prime = 'Yes';
-if(num<=1){
-	console.log('No')
+let num=13;
+let count=0;
+for (let i=1;i<=num;i++){
+  if (num%i==0){
+    count++;
+  }
+}
+if (count===2){
+  console.log("Yes");
 }
 else{
-	for(let i = 2;i<=Math.sqrt(num);i++){
-		if(num%i===0){
-			prime = 'No'
-			break;
-		}
-	}
-	console.log(prime)
+  console.log("No");
 }
